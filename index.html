@@ -1,21 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navagation Bar</title>
-    <link rel="stylesheet" href="idx.css">
-</head>
-<body>
+    <link rel="stylesheet" href="idx.css" />
+  </head>
+  <body>
     <nav>
-    <div class="navbar">
-       
-           <a  class="active" href="Books.html" id="a1">Books</a>
-
-           <a href="Register.html" id="a2">Register</a>
-       
-    </div>
+      <a href="#">Library System</a>
+      <div>
+        <a href="#">Books</a>
+        <a href="#">Register</a>
+        <a href="#">About</a>
+        <a href="#">Logout</a>
+      </div>
     </nav>
-    <h1>Welcom To AccioJob!</h1>
-</body>
+
+    <section id="books">
+        <div id="books-div">
+        <h3 id="book-h">Books</h3>
+      
+      <table >
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Availabilty</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <a href="#">Book Title</a>
+            <table>
+              <tr>
+                <td>Publication Date</td>
+              </tr>
+              <tr>
+                <td>Page Count:250</td>
+              </tr>
+              <tr>
+                <td>ISBN:23547896</td>
+              </tr>
+            </table>
+          </td>
+          <td>Author Name1</td>
+          <td>Genre 1</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <a href="#">Book Title</a>
+            <table>
+              <tr>
+                <td>Publication Date</td>
+              </tr>
+              <tr>
+                <td>Page Count:250</td>
+              </tr>
+              <tr>
+                <td>ISBN:23547896</td>
+              </tr>
+            </table>
+          </td>
+          <td>Author Name1</td>
+          <td>Genre 1</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <a href="#">Book Title</a>
+            <table>
+              <tr>
+                <td>Publication Date</td>
+              </tr>
+              <tr>
+                <td>Page Count:250</td>
+              </tr>
+              <tr>
+                <td>ISBN:23547896</td>
+              </tr>
+            </table>
+          </td>
+          <td>Author Name1</td>
+          <td>Genre 1</td>
+          <td>Available</td>
+        </tr>
+      </table>
+    </div>
+    </section>
+    <section id="register">
+        <div id="register-div">
+            <h3>Register</h3>
+            <form method="post"> 
+                <label for="first">First Name</label>
+                <input type="text" id="first" required>
+                <label for="last">Last Name</label>
+                <input type="text" id="last" required>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" required>
+                <label for="email">Eamil</label>
+                <input type="email" id="email" required>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" required>
+                <label for="pas">Confirm Password</label>
+                <input type="password" id="pas" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+    </section>
+  </body>
 </html>

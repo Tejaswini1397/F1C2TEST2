@@ -1,34 +1,79 @@
-body{
-    padding: 0;
-    margin:0;
-    background-color: rgb(214, 223, 223)
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
 }
-.navbar {
-    background-color:black;
-    overflow: hidden;
-    padding-right: 30px;
-  }
-  .navbar a {
-    float:right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-size: 25px;
-  }
-  .navbar a:hover {
-    background-color: #dad4b7;
-    color: rgb(160, 157, 190);
-  }
-  .navbar:hover{
-   
-    background-color: rgb(27, 88, 173);
- }
- h1{
-    display: flex;
-    justify-content: center;
- }
- h1:hover{
-   
-    color: rgb(27, 88, 173);
- }
+body{
+  background-color: #f0f0f0;
+}
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+nav > a, nav>div>a {
+  color: white;
+  text-decoration: none;
+  margin-inline: 10px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto:wght@100&display=swap");
+#books,#register{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+#books-div,#register-div{
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px darkgrey;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: white;
+}
+#book-h,#register-div>h3{
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+table,th,td{
+  border: 2px solid #ececec;
+  border-collapse: collapse;
+  color: #2c2c2c;
+}
+td,th{
+  padding: 10px;
+}
+td>a{
+  color: #220fb2;
+  display:inline-block;
+  padding-bottom: 10px;
+}
+#register-div{
+  width: 570px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+input{
+  border: 1px solid #ececec;
+  padding: 5px;
+}
+button{
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 17px;
+  margin-top: 20px;
+  padding: 10px;
+}
